@@ -1,0 +1,30 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Node um nove Forwork apreendido",
+    "description": "NodeJS a framework JS",
+    "duration": 180
+}
+
+###
+GET http://localhost:3333/videos?search=node
+
+###
+
+PUT  http://localhost:3333/videos/187b7cc1-fe65-4382-a7cd-c0b6c46d3ae4
+Content-Type: application/json
+
+{
+    "title": "Video actualizado Superado ",
+    "description": "Description of video456",
+    "duration": 1004
+}
+
+###
+
+DELETE  http://localhost:3333/videos/187b7cc1-fe65-4382-a7cd-c0b6c46d3ae4
+
+
+###
+GET  http://localhost:3333/videos
